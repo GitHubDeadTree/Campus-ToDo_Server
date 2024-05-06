@@ -12,7 +12,7 @@ sudo mysql
 mysql > SELECT user,authentication_string,plugin,host FROM mysql.user;
 mysql > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 
-# Create a database for tomato work
+# Create a database for Campus_ToDo
 mysql > CREATE DATABASE tomato_work
 
 # Later you can login to mysql via
