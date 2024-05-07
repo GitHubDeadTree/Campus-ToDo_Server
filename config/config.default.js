@@ -1,5 +1,5 @@
 'use strict'
-
+ 
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
