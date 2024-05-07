@@ -74,6 +74,21 @@ class TaskController extends Controller {
         content,
         count
       })
+
+      //获取当前时间
+      const dateObject = new Date(date);
+      const now = new Date();
+      const twentyFourHoursAgo = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      //如果待办时间大于现在起的24小时，就提醒
+      if (dateObject >= twentyFourHoursAgo) {
+        const result = await service.reminder.create({ createdAt: date, content })
+        ctx.print = {
+          data: result,
+          msg: '创建成功'
+        }
+      }
+
+
       ctx.print = { msg: '新增成功' }
     } catch {
       ctx.print = { errorCode: 3 }
