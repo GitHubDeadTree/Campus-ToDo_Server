@@ -1,4 +1,6 @@
 module.exports = app => {
+
+  //在下版本中，应更名成bill
   const { INTEGER, STRING, UUIDV4, UUID, DECIMAL, BIGINT, TEXT } = app.Sequelize
 
   const Schema = app.model.define('capital_flow', {

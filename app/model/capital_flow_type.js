@@ -1,6 +1,6 @@
 module.exports = app => {
   const { INTEGER, STRING, TINYINT, UUIDV4, UUID } = app.Sequelize
-
+  //在下版本中，应更名成bill_type
   const Schema = app.model.define('capital_flow_type', {
     id: {
       type: UUID,
