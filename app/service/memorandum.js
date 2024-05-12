@@ -49,6 +49,7 @@ class Memorandum extends Service {
     const uid = ctx.user.uid
     return ctx.model.Memorandum.update(updateFields, { where: { uid, id } })
   }
+  // 非常好
 
   async deleteById(id) {
     const { ctx } = this

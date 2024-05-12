@@ -6,7 +6,7 @@ const dayjs = require('dayjs')
 class CompanyService extends Service {
 
   /**
-   * 一次性查询全部，因为公司不会有很多
+   * 一次性查询全部，因为单位不会有很多
    * @param {Number} uid
    * @return {Promise}
    */

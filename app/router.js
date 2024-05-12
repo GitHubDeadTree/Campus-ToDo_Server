@@ -55,7 +55,7 @@ module.exports = app => {
   // 活动清单
   router.resources('todoList', '/api/todoList', userRequired, todoList)
 
-  // 公司单位
+  // 公司单位 (废弃)
   router.resources('company', '/api/company', userRequired, company)
 
   // 日志管理
